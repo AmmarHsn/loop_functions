@@ -6,3 +6,4 @@ link_directories(
     )
 
 add_subdirectory(moca)
+add_subdirectory(chocolate)
