@@ -75,7 +75,7 @@ void ChocolateAACLoopFunction::PostStep() {
 
     Real fDistanceSpot = (m_cCoordBlackSpot - cEpuckPosition).Length();
     if (fDistanceSpot <= m_fRadius) {
-      m_fObjectiveFunction += 1;
+      m_fObjectiveFunction -= 1;
     }
   }
 }
