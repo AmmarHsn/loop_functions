@@ -147,7 +147,7 @@ void ForagingTwoSpotsLoopFunction::PostStep() {
     } else if (cEpuckPosition.GetY() <= m_fNestLimit) {
       std::map<std::string, UInt32>::iterator itFood = m_mapFoodData.find(strRobotId);
       if (itFood != m_mapFoodData.end()) {
-        m_fObjectiveFunction += itFood->second;
+        m_fObjectiveFunction -= itFood->second;
       }
       m_mapFoodData[strRobotId] = 0;
       // LOG << "Obj " << m_fObjectiveFunction << std::endl;
