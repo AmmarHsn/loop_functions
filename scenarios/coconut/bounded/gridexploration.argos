@@ -52,7 +52,7 @@
   <!-- Please note that this light has an intensity equal to 0 -->
   <!-- and therefore does not affect the experiment. -->
   <!-- ARGoS requires at least one light when using the light sensor -->
-	<!--<light id="light" position="1.3,1.3,0.15" orientation="0,0,0" color="yellow" intensity="0.0" medium="leds"/> -->
+	<light id="light" position="1.3,1.3,0.15" orientation="0,0,0" color="yellow" intensity="0.0" medium="leds"/>
 
   <!--Dodecagonal arena with side of length .66-->
   <box id="wall_1" size="0.01,.66,0.08" movable="false">
