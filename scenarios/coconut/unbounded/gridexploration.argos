@@ -11,7 +11,7 @@
   <!-- ****************** -->
   <!-- * Loop functions * -->
   <!-- ****************** -->
-  <loop_functions library="../../../experiments-loop-functions/build/loop-functions/exploration/libgrid_exploration.so"
+  <loop_functions library="../../../experiments-loop-functions/build/loop-functions/coconut/libgrid_exploration.so"
    label="grid_exploration">
    <params dist_radius="1.2" number_robots="10"/>
   </loop_functions>
@@ -35,7 +35,7 @@
 		    <epuck_ground implementation="rot_z_only" noise_level="0.05" calibrated="true"/>
 		    <epuck_omnidirectional_camera implementation="rot_z_only" medium="leds" show_rays="false"/>
       </sensors>
-    <params readable="true" fsm-config="--nstates 1 --s0 1"/>
+    <params readable="true" config="--fsm-config --nstates 1 --s0 10 --rwm0 0/>
     </automode_controller>
   </controllers>
 
