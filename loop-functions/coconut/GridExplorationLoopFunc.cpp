@@ -114,7 +114,7 @@ void GridExplorationLoopFunction::PostStep() {
 /****************************************/
 
 void GridExplorationLoopFunction::PostExperiment() {
-    m_fObjectiveFunction = m_fObjectiveFunction/m_gridSize/m_gridSize;
+    m_fObjectiveFunction = m_fObjectiveFunction/(m_gridSize * m_gridSize);
     // LOG << "Final value : "<< m_fObjectiveFunction << std::endl;
 }
 
