@@ -80,7 +80,6 @@ void ChocolateAACLoopFunction::PostStep() {
   }
   LOG << "Score : "<< m_fObjectiveFunction << std::endl;
 }
-}
 
 /****************************************/
 /****************************************/
